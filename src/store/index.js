@@ -5,6 +5,7 @@ import {
   loginReducer,
   handleEmailInput,
   handlePasswordInput,
+  handleLoginFormReset,
 } from "./slices/loginSlice";
 import {
   handleUserTypeInput,
@@ -36,6 +37,7 @@ export {
   store,
   themeHandler,
   modalActive,
+  handleLoginFormReset,
   modalDisable,
   handleEmailInput,
   handleFormReset,

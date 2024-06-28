@@ -1,17 +1,20 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { fetchUserData } from "../store";
 import { useDispatch, useSelector } from "react-redux";
+import { fetchUserData } from "../store";
+
 const Home = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const { data } = useSelector((state) => state.user);
 
   useEffect(() => {
-    dispatch(fetchUserData(id));
-  }, []);
+    if (id) {
+      dispatch(fetchUserData(id));
+    }
+  }, [id, dispatch]);
 
-  return <div>{id}</div>;
+  const userData = useSelector((state) => state.user.data);
+  return <div>{userData ? userData.firstName : "...Loading"}</div>;
 };
 
 export default Home;

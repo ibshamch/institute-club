@@ -2,9 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import { fetchUserData } from "../thunks/fetchUserData";
 
 const userSlice = createSlice({
-  name: "userSlice",
+  name: "user",
   initialState: {
-    data: {},
+    data: null,
   },
   extraReducers: (builder) => {
     builder.addCase(fetchUserData.fulfilled, (state, action) => {

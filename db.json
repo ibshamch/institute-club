@@ -50,8 +50,87 @@
       "firstName": "Ibsham",
       "lastName": "Ch",
       "email": "ibshamchaudhary@outlook.com",
-      "password": "HjZV5Pg5rDH@",
+      "password": "2211",
       "userType": "Teacher",
+      "plan": {
+        "type": "Basic",
+        "price": "100$",
+        "duration": "1 month",
+        "features": [
+          "Access to basic content",
+          "Email support",
+          "Community access"
+        ],
+        "additionalBenefits": "10% discount on annual subscription"
+      }
+    },
+    {
+      "id": 5029336,
+      "firstName": "Aisham ",
+      "lastName": "Fatima",
+      "email": "aisham@outlook.com",
+      "password": "2211",
+      "userType": "Student",
+      "plan": {
+        "type": "Premium",
+        "price": "300$",
+        "duration": "1 month",
+        "features": [
+          "Access to all content",
+          "Priority email support",
+          "Community access",
+          "Monthly webinars"
+        ],
+        "additionalBenefits": "15% discount on annual subscription"
+      }
+    },
+    {
+      "id": 8583023,
+      "firstName": "bobby",
+      "lastName": "ch",
+      "email": "bobby@gmail.com",
+      "password": "2211",
+      "userType": "Admin",
+      "plan": {
+        "type": "Executive",
+        "price": "500$",
+        "duration": "1 month",
+        "features": [
+          "Access to all content",
+          "24/7 dedicated support",
+          "Community access",
+          "Monthly webinars",
+          "One-on-one coaching sessions"
+        ],
+        "additionalBenefits": "20% discount on annual subscription, Free access to exclusive events"
+      }
+    },
+    {
+      "id": 8088939,
+      "firstName": "Ibsham2",
+      "lastName": "ch",
+      "email": "ibshamch2@gmail.com",
+      "password": "2211",
+      "userType": "Student",
+      "plan": {
+        "type": "Basic",
+        "price": "100$",
+        "duration": "1 month",
+        "features": [
+          "Access to basic content",
+          "Email support",
+          "Community access"
+        ],
+        "additionalBenefits": "10% discount on annual subscription"
+      }
+    },
+    {
+      "id": 3279683,
+      "firstName": "bobby2",
+      "lastName": "bobby",
+      "email": "bobby@gmail.com",
+      "password": "bobby",
+      "userType": "Student",
       "plan": {
         "type": "Basic",
         "price": "100$",

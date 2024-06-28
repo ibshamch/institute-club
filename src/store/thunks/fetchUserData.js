@@ -1,12 +1,13 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const fetchUserData = createAsyncThunk("userData/fetch", async (id) => {
-  const { data } = await axios.get("http://localhost:5000/users");
-  const userData = data.find((account) => {
-    return account.id === id;
-  });
-  return userData;
-});
-
-export { fetchUserData };
+export const fetchUserData = createAsyncThunk(
+  "userData/fetch",
+  async (idReceived) => {
+    const { data } = await axios.get("http://localhost:5000/users");
+    const userData = data.find(
+      (user) => String(user.id) === String(idReceived)
+    );
+    return userData;
+  }
+);

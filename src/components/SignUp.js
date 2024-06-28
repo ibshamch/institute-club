@@ -21,7 +21,7 @@ const SignUp = () => {
   const addNewUserToDatabase = async (user) => {
     await axios.post("http://localhost:5000/users", user);
   };
-  const handleSignUpForm = (e) => {
+  const handleSignUpForm = async (e) => {
     e.preventDefault();
     const newUser = {
       firstName,
@@ -33,6 +33,7 @@ const SignUp = () => {
       plan,
     };
     addNewUserToDatabase(newUser);
+    await new Promise((resolve) => setTimeout(resolve, 500));
     dispatch(handleFormReset());
     navigate(`/home/${newUser.id}`);
   };

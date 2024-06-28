@@ -6,7 +6,6 @@ const themeSlice = createSlice({
   reducers: {
     // actions
     themeHandler(state) {
-      console.log(state);
       return !state;
     },
   },
