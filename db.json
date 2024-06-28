@@ -1,0 +1,68 @@
+{
+  "pricingAndPlans": {
+    "planTypeData": [
+      "Basic",
+      "Premium",
+      "Executive"
+    ],
+    "plansArrData": [
+      {
+        "type": "Basic",
+        "price": "100$",
+        "duration": "1 month",
+        "features": [
+          "Access to basic content",
+          "Email support",
+          "Community access"
+        ],
+        "additionalBenefits": "10% discount on annual subscription"
+      },
+      {
+        "type": "Premium",
+        "price": "300$",
+        "duration": "1 month",
+        "features": [
+          "Access to all content",
+          "Priority email support",
+          "Community access",
+          "Monthly webinars"
+        ],
+        "additionalBenefits": "15% discount on annual subscription"
+      },
+      {
+        "type": "Executive",
+        "price": "500$",
+        "duration": "1 month",
+        "features": [
+          "Access to all content",
+          "24/7 dedicated support",
+          "Community access",
+          "Monthly webinars",
+          "One-on-one coaching sessions"
+        ],
+        "additionalBenefits": "20% discount on annual subscription, Free access to exclusive events"
+      }
+    ]
+  },
+  "users": [
+    {
+      "id": 3169853,
+      "firstName": "Ibsham",
+      "lastName": "Ch",
+      "email": "ibshamchaudhary@outlook.com",
+      "password": "HjZV5Pg5rDH@",
+      "userType": "Teacher",
+      "plan": {
+        "type": "Basic",
+        "price": "100$",
+        "duration": "1 month",
+        "features": [
+          "Access to basic content",
+          "Email support",
+          "Community access"
+        ],
+        "additionalBenefits": "10% discount on annual subscription"
+      }
+    }
+  ]
+}
